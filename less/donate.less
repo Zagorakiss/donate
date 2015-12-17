@@ -1,0 +1,84 @@
+
+@orange: #ffa500;
+@orange-op: rgba(255,165,0,0.5);
+@brown: #271900;
+@brown-op: rgba(39,25,0,0.5);
+@light-brown: #524632;
+@green: #336d30;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.wrapper {
+	text-align: center;
+
+	.message {
+		background-color: @orange-op;
+		color: @brown;
+		font-family: Inconsolata;
+		font-size: 22px;
+		text-align: center;
+		vertical-align: middle;
+		min-height: 30vh;
+		padding: 5vh 5vw;
+		p {
+			padding: 5px;
+		}
+	}
+
+	.payways {
+		display: block;
+		position: relative;
+		background-color: @brown;
+		color: @orange;
+		padding: 20px;
+		text-align: center;
+		vertical-align: middle;
+		min-height: 60vh;
+
+		.secured {
+			margin: 60px 20px 40px 20px;
+		}
+
+		.payway {
+			display: inline-block;
+  			text-align: center;
+  			vertical-align: middle;
+			margin: 60px 60px 20px 60px;
+			// width: 50%;
+			// min-height: 20vh;
+			overflow: hidden;
+		}
+
+		.pay-btn {
+			display: inline-block;
+			width: 400px;
+			font-family: Inconsolata;
+			font-size: 33px;
+			padding: 18px 30px;
+			border: 2px dashed @orange;
+			border-radius: 50px;
+			text-decoration: none;
+			color: @orange;
+			transition: all 0.3s ease;
+			&:hover {
+				background-color: @orange;
+				color: @brown;
+			} 
+		}
+
+	}
+
+
+
+
+}
+
+
+
+
