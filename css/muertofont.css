@@ -59,6 +59,7 @@ footer .social .icon {
 .payways .icon {
 	font-size: 33px;
 	color: #ffa500;
+	transition: all 0.3s ease;
 }
 
 
@@ -67,7 +68,7 @@ footer .social .icon {
 	color: #ffa500;
 }
 
-.pay-btn .icon:hover {
+.pay-btn:hover .icon {
 	color: #271900;
 }
 

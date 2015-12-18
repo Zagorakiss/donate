@@ -16,10 +16,63 @@
 	<link href="css/muertofont.css" rel="stylesheet">
 	<link rel="stylesheet/less" type="text/css" href="/less/donate.less" />
 	<script src="/js/less.min.js" type="text/javascript"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 
 <body>
+	<!-- PRELOADER -->
+    <div class="preloader" id="preloader"></div>
+    <script>
+    jQuery(document).ready(function($) {  
+      $(window).load(function(){
+      $('#preloader').fadeOut('slow',function(){$(this).remove();});
+      });
+      
+    });
+    </script>
+    <!-- PRELOADER END -->
+
+
+
+<!-- NAV -->
+      <div class="burger">
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+  </div>
+
+  <nav class="menu">
+    <div class="menu__brand">
+      <!-- <a href=""> --><div class="logo"></div><!-- </a> -->
+    </div>
+    <ul class="menu__list">
+      <!-- INTERNAL -->
+      <li class="menu__item"><a href="http://devmuerto.com" class="menu__link"><span class="icon icon-circle-left"></span> Main Page</a></li>
+      <li class="menu__item"><a href="/portfolio/" class="menu__link"><span class="icon icon-briefcase"></span> Portfolio</a></li>
+      <!-- EXTERNAL -->
+      <li class="menu__item">
+        <a href="http://chpfly.com" target="_blank" class="menu__link menu__link--external menu__link--external--first">
+          [ <span class="icon icon-plane"></span> Cheap Fly <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/kitchen-timer/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-hourglass"></span> Kitchen Timer <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/svg-painter/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-tools"></span> SVG Painter <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/track-me/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-radio"></span> Track Me <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+    </ul>
+  </nav>
+      <!-- NAV END -->
+
+
+
 	<div class="wrapper">
 		<div class="message"><p><span class="icon icon-pig"></span></p><p>If you like my projects and consider them useful, you can make a donation for development.</p><p>Projects will be free forever!</p><p>They would be more powerful!</p></div>
 		<div class="payways">
@@ -29,5 +82,6 @@
 			<h1 class="secured"><span class="icon icon-cc-mastercard"></span> <span class="icon icon-cc-visa"></span></h1>
 		</div>
 	</div>
+	<script src="js/only-nav.js"></script>
 </body>
 </html>
